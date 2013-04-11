@@ -19,7 +19,7 @@ set matchtime=2         " show matching bracket for 0.2 seconds
 set matchpairs+=<:>     " specially for html
 
 " editor settings
-set list listchars=tab:»·,trail:· " Display extra whitespace
+"set list listchars=TODO " Display extra whitespace
 set esckeys             " map missed escape sequences (enables keypad keys)
 set ignorecase          " case insensitive searching
 set smartcase           " but become case sensitive if you type uppercase characters
