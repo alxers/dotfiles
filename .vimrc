@@ -119,6 +119,8 @@ imap jj <esc>
 let mapleader = ","
 nnoremap <leader><leader> <c-^>
 
+cmap w!! %!sudo tee > /dev/null %
+
 " Plugins
 " Vundle
 
