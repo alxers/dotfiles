@@ -70,6 +70,8 @@ nmap zp "+p
 nmap zP "+P
 nmap zx "+x
 
+set pastetoggle=<F2>
+
 " file type specific settings
 if has("autocmd")
   " For debugging
