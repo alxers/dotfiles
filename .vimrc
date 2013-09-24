@@ -1,7 +1,7 @@
 " display settings
-" set background=dark     " enable for dark terminals
+set background=light     " enable for dark terminals
 set guifont=Monospace\ 12
-" colorscheme desert
+colorscheme solarized
 set t_Co=256			" 16 color, may be 256
 set nowrap              " dont wrap lines
 " set linebreak			" wrap at word
@@ -19,7 +19,7 @@ set matchtime=2         " show matching bracket for 0.2 seconds
 set matchpairs+=<:>     " specially for html
 
 " editor settings
-"set list listchars=TODO " Display extra whitespace
+set list listchars=tab:>-,trail:^,extends:>,precedes:< " Display extra whitespace
 set esckeys             " map missed escape sequences (enables keypad keys)
 set ignorecase          " case insensitive searching
 set smartcase           " but become case sensitive if you type uppercase characters
@@ -106,18 +106,18 @@ if has("autocmd")
     "   n - auto wrap numbered lists
   augroup END
 
-  " Always jump to the last known cursor position. 
+  " Always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside
-  " an event handler (happens when dropping a file on gvim). 
-  autocmd BufReadPost * 
-    \ if line("'\"") > 0 && line("'\"") <= line("$") | 
-    \   exe "normal g`\"" | 
-    \ endif 
+  " an event handler (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
 
 endif " has("autocmd")
 
 " Mapping
-imap jj <esc> 
+imap jj <esc>
 let mapleader = ","
 nnoremap <leader><leader> <c-^>
 
@@ -137,14 +137,15 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 " Original repos on github
 " Bundle 'tpope/vim-fugitive'
-" Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-haml'
 
 " Vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
- 
+
 filetype plugin indent on " Required!
 "  Brief help
 " :BundleList          - list configured bundles
