@@ -1,7 +1,7 @@
 " display settings
 set background=light     " enable for dark terminals
 set guifont=Monospace\ 12
-colorscheme solarized
+"colorscheme solarized
 set t_Co=256			" 16 color, may be 256
 set nowrap              " dont wrap lines
 " set linebreak			" wrap at word
@@ -124,6 +124,11 @@ nnoremap <leader><leader> <c-^>
 cmap w!! %!sudo tee > /dev/null %
 
 " Plugins
+
+" CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 " Vundle
 
 set nocompatible " Be iMproved
@@ -138,14 +143,14 @@ Bundle 'gmarik/vundle'
 " Original repos on github
 " Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-haml'
-Bundle 'kchmck/vim-coffee-script'
+"Bundle 'tpope/vim-haml'
+"Bundle 'kchmck/vim-coffee-script'
 
 " Vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on " Required!
 "  Brief help
