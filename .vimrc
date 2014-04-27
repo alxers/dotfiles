@@ -1,7 +1,7 @@
 " display settings
-set background=light     " enable for dark terminals
-set guifont=Monospace\ 12
-"colorscheme solarized
+"set background=light     " enable for dark terminals
+"set guifont=Monospace\ 12
+color jellybeans
 set t_Co=256			" 16 color, may be 256
 set nowrap              " dont wrap lines
 " set linebreak			" wrap at word
@@ -145,6 +145,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails.git'
 "Bundle 'tpope/vim-haml'
 "Bundle 'kchmck/vim-coffee-script'
+Bundle 'scrooloose/nerdcommenter.git'
 
 " Vim-scripts repos
 " Bundle 'L9'
