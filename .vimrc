@@ -1,7 +1,7 @@
 " display settings
 "set background=light     " enable for dark terminals
 "set guifont=Monospace\ 12
-color jellybeans
+color xoria256
 set t_Co=256			" 16 color, may be 256
 set nowrap              " dont wrap lines
 " set linebreak			" wrap at word
