@@ -96,7 +96,7 @@ set $WS6 6: tmp
 set $WS7 7: tmp
 set $WS8 8: tmp
 set $WS9 9: vbx
-set $WS10 0: skp
+set $WS10 10: skp
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -136,8 +136,8 @@ for_window [window_role="pop-up"] floating enable
 
 # change system volume
 # use 'xev' to find out key code
-bindcode $mod+86 exec amixer set Master 5+
-bindcode $mod+82 exec amixer set Master 5-
+bindcode 123 exec amixer set Master 5+
+bindcode 122 exec amixer set Master 5-
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -190,3 +190,5 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 # autostart
 #exec --no-startup-id i3-msg 'workspace 1; exec urxvt;'
 #exec --no-startup-id i3-msg 'workspace 2; exec urxvt;'
+# /etc/init.d/wicd start
+exec --no-startup-id wicd-gtk -t

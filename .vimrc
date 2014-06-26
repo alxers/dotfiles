@@ -134,24 +134,25 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set nocompatible " Be iMproved
 filetype off     " Required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 " Original repos on github
 " Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails.git'
-"Bundle 'tpope/vim-haml'
+Plugin 'tpope/vim-rails.git'
+Plugin 'tpope/vim-haml'
 "Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/nerdcommenter.git'
+Plugin 'scrooloose/nerdcommenter.git'
 
 " Vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
+call vundle#end()
 
 filetype plugin indent on " Required!
 "  Brief help
