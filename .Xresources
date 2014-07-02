@@ -4,12 +4,14 @@ URxvt.scrollBar: false
 URxvt.letterSpace: -1
 !URxvt.font: xft:DejaVu Sans Mono:pixelsize=14
 !URxvt*font: xft:monaco:size=9
-Xft.dpi:        96
+!Xft.dpi:        96
+Xft.dpi:        120
 Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
-URxvt*font: xft:Monospace:size=9
+!URxvt*font: xft:Monospace:size=11
+URxvt*font: xft:Monospace:pixelsize=14
 
 !black.normal        : xoria256.LineNr.guibg
 !black.bright        : black.normal.rgb - 8
