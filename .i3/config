@@ -191,4 +191,4 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 #exec --no-startup-id i3-msg 'workspace 1; exec urxvt;'
 #exec --no-startup-id i3-msg 'workspace 2; exec urxvt;'
 # /etc/init.d/wicd start
-exec --no-startup-id wicd-gtk -t
+#exec --no-startup-id wicd-gtk -t
