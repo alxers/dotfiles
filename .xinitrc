@@ -7,5 +7,8 @@ setxkbmap -layout "us,ru" -option "grp:caps_toggle,grp_led:caps,compose:ralt"
 /usr/bin/xbacklight -set 80
 /usr/bin/xinput set-prop 12 'Device Enabled' 0
 
+# Disable touchpad while typing
+#/usr/bin/syndaemon -t -k -i 2 -d &
+
 exec wicd-gtk -t &
 exec i3
