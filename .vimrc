@@ -1,7 +1,7 @@
 " display settings
 "set background=light     " enable for dark terminals
 "set guifont=Monospace\ 12
-color xoria256
+"color xoria256
 set t_Co=256			" 16 color, may be 256
 set nowrap              " dont wrap lines
 " set linebreak			" wrap at word
@@ -81,9 +81,10 @@ if has("autocmd")
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup mysettings
-    au FileType xslt,xml,css,html,xhtml,javascript,sh,config,cpp,docbook set smartindent shiftwidth=2 softtabstop=2 expandtab
+    au FileType xslt,xml,css,html,xhtml,sh,config,cpp,docbook set smartindent shiftwidth=2 softtabstop=2 expandtab
     au FileType tex set wrap shiftwidth=2 softtabstop=2 expandtab
     au FileType c set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+    au FileType javascript set smartindent shiftwidth=4 softtabstop=4 expandtab
 
     " Confirm to PEP8
     au FileType python set tabstop=4 softtabstop=4 expandtab shiftwidth=4 cinwords=if,elif,else,for,while,try,except,finally,def,class
