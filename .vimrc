@@ -147,7 +147,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'tpope/vim-haml'
 "Bundle 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdcommenter.git'
-Plugin 'mileszs/ack.vim'
+"Plugin 'mileszs/ack.vim'
 
 " Vim-scripts repos
 " Bundle 'L9'
